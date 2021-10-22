@@ -1,0 +1,131 @@
+[
+  {
+    "canteen": "Abels Hus",
+    "monday": [
+      {
+        "meal": "Bakt svinenakke med Frostagrønnsaker og estragonmajones",
+        "allergens": "Selleri, egg"
+      },
+      {
+        "meal": "Grønnsaksuppe (V)",
+        "allergens": "Selleri"
+      }
+    ],
+    "tuesday": [
+      {
+        "meal": "Klassisk fiskegrateng med råkost og eggsmør",
+        "allergens": "Fisk, egg, melk, hvete"
+      },
+      {
+        "meal": "Blomkålsuppe med rista blomkål og gresskarkjerner",
+        "allergens": "Melk, selleri"
+      }
+    ],
+    "wednesday": [
+      {
+        "meal": "Sandwich med smørloff, kalkun, philadelphia, speilegg, tomat, pesto og salat",
+        "allergens": "Mel, hvete, selleri, egg"
+      },
+      {
+        "meal": "Minestronesuppe (V)",
+        "allergens": "Selleri, hvete"
+      }
+    ],
+    "thursday": [
+      {
+        "meal": "Sopp stroganoff med potetmos tilsmakt sitron og timian (V)",
+        "allergens": "Melk, selleri"
+      },
+      {
+        "meal": "Gulrot- og ingefærsuppe med økologisk kokos",
+        "allergens": "Hvete, melk, selleri"
+      }
+    ],
+    "friday": [
+      {
+        "meal": "Kikertcurry med økologisk ris, mangochutney og risa økologisks kokos (V)",
+        "allergens": "Selleri"
+      },
+      {
+        "meal": "Brokkolisuppe",
+        "allergens": "SelleriFredagskos: Sitronkake med melisglasur"
+      }
+    ]
+  },
+  {
+    "canteen": "Teknobyen Innovasjonssenter",
+    "monday": [
+      {
+        "meal": "Bakt kyllinglår, ris, cashewnøtter og koriander",
+        "allergens": "selleri, nøtter, soya, gluten"
+      },
+      {
+        "meal": "Gulrot- og ingefærsuppe med ristet kokos (V)",
+        "allergens": "Selleri"
+      }
+    ],
+    "tuesday": [
+      {
+        "meal": "Pølse med hjemmelaget pølsebrød, syrlig kål, rista sesamfrø, syltet løk, chilimajones og fransk potetsalat",
+        "allergens": "Gluten, hvete, egg, sesam"
+      },
+      {
+        "meal": "Løksuppe",
+        "allergens": "Selleri"
+      }
+    ],
+    "wednesday": [
+      {
+        "meal": "Lammekebab, couscoussalat og yoghurtdressing",
+        "allergens": "Selleri, melk,"
+      },
+      {
+        "meal": "Minestronesuppe (V)",
+        "allergens": "Selleri, hvete"
+      }
+    ],
+    "thursday": [
+      {
+        "meal": "Det finnes desverre ingen informasjon for denne dagen."
+      }
+    ],
+    "friday": [
+      {
+        "meal": "Gårdsand, ris, appelsinsaus og agurk- og spinatsalat",
+        "allergens": ""
+      },
+      {
+        "meal": "Thaisuppe tilsmakt kokosmelk (V)",
+        "allergens": "Selleri,"
+      }
+    ]
+  },
+  {
+    "canteen": "Miljøbygget",
+    "monday": [
+      {
+        "meal": "Ukens suppe : AspergessuppePasta Arrabiata , tapasboller"
+      }
+    ],
+    "tuesday": [
+      {
+        "meal": "Texmexgryte, nachos"
+      }
+    ],
+    "wednesday": [
+      {
+        "meal": "\" Dagens Ravnkloa \""
+      }
+    ],
+    "thursday": [
+      {
+        "meal": "Svinenakke, tzatsiki, gyrosbrød"
+      }
+    ],
+    "friday": [
+      {
+        "meal": "Langtidsstekt brisket, maiskrem, stekte hvitløkspoteter"
+      }
+    ]
+  }
+]
