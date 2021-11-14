@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Varela+Round&display=swap"
+          rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's menu!</title>
+    <script type="text/javascript" src="this_week_menu.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            const myData = JSON.parse(data);
+            const todaysDate = new Date();
+            const dayOfWeek = todaysDate.getDay();
+            // dayOfWeek = 0; //fake monday
+            document.getElementById('canteen_name').textContent = myData[1].canteen;
+            document.getElementById('todays_main').textContent = myData[1]["day" + dayOfWeek][0].meal;
+            document.getElementById('todays_soup').textContent = myData[1]["day" + dayOfWeek][1].meal;
+            console.log(myData[1]["day" + dayOfWeek][0].allergens);
+            if (!myData[1]["day" + dayOfWeek][0].allergens.toLowerCase().includes("sel")) {
+                document.getElementById('todays_main_celery_warning').remove();
+            }
+            if (!myData[1]["day" + dayOfWeek][1].allergens.toLowerCase().includes("sel")) {
+                document.getElementById('todays_soup_celery_warning').remove();
+            }
+
+        })
+    </script>
+    <style>
+        * {
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            margin: 0.4rem;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+
+        body {
+            background-image: url("background.jpeg");
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .menuWrapper {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .menuItemLine {
+            display: flex;
+            height: 50px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .biohazard {
+            height: 50px;
+            filter: invert(100%);
+        }
+
+        .blink {
+            animation: blinker 2s normal 2;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="menuWrapper">
+    <h1 class="title">Today's menu</h1>
+    <h2 id="canteen_name"></h2>
+
+    <h3>Main</h3>
+    <div class="menuItemLine">
+        <div id="todays_main"></div>
+        <img id="todays_main_celery_warning"
+             src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Biohazard_symbol.svg" class="biohazard blink"
+             alt="biohazard symbol"/>
+    </div>
+
+    <h3>Soup</h3>
+    <div class="menuItemLine">
+        <div id="todays_soup"></div>
+        <img id="todays_soup_celery_warning"
+             src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Biohazard_symbol.svg" class="biohazard blink"
+             alt="biohazard symbol"/>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 [
   {
     "canteen": "Abels Hus",
-    "monday": [
+    "day0": [
       {
         "meal": "Bakt svinenakke med Frostagrønnsaker og estragonmajones",
         "allergens": "Selleri, egg"
@@ -11,7 +11,7 @@
         "allergens": "Selleri"
       }
     ],
-    "tuesday": [
+    "day1": [
       {
         "meal": "Klassisk fiskegrateng med råkost og eggsmør",
         "allergens": "Fisk, egg, melk, hvete"
@@ -21,7 +21,7 @@
         "allergens": "Melk, selleri"
       }
     ],
-    "wednesday": [
+    "day2": [
       {
         "meal": "Sandwich med smørloff, kalkun, philadelphia, speilegg, tomat, pesto og salat",
         "allergens": "Mel, hvete, selleri, egg"
@@ -31,7 +31,7 @@
         "allergens": "Selleri, hvete"
       }
     ],
-    "thursday": [
+    "day3": [
       {
         "meal": "Sopp stroganoff med potetmos tilsmakt sitron og timian (V)",
         "allergens": "Melk, selleri"
@@ -41,7 +41,7 @@
         "allergens": "Hvete, melk, selleri"
       }
     ],
-    "friday": [
+    "day4": [
       {
         "meal": "Kikertcurry med økologisk ris, mangochutney og risa økologisks kokos (V)",
         "allergens": "Selleri"
@@ -54,7 +54,7 @@
   },
   {
     "canteen": "Teknobyen Innovasjonssenter",
-    "monday": [
+    "day0": [
       {
         "meal": "Bakt kyllinglår, ris, cashewnøtter og koriander",
         "allergens": "selleri, nøtter, soya, gluten"
@@ -64,7 +64,7 @@
         "allergens": "Selleri"
       }
     ],
-    "tuesday": [
+    "day1": [
       {
         "meal": "Pølse med hjemmelaget pølsebrød, syrlig kål, rista sesamfrø, syltet løk, chilimajones og fransk potetsalat",
         "allergens": "Gluten, hvete, egg, sesam"
@@ -74,7 +74,7 @@
         "allergens": "Selleri"
       }
     ],
-    "wednesday": [
+    "day2": [
       {
         "meal": "Lammekebab, couscoussalat og yoghurtdressing",
         "allergens": "Selleri, melk,"
@@ -84,12 +84,12 @@
         "allergens": "Selleri, hvete"
       }
     ],
-    "thursday": [
+    "day3": [
       {
         "meal": "Det finnes desverre ingen informasjon for denne dagen."
       }
     ],
-    "friday": [
+    "day4": [
       {
         "meal": "Gårdsand, ris, appelsinsaus og agurk- og spinatsalat",
         "allergens": ""
@@ -102,27 +102,27 @@
   },
   {
     "canteen": "Miljøbygget",
-    "monday": [
+    "day0": [
       {
         "meal": "Ukens suppe : AspergessuppePasta Arrabiata , tapasboller"
       }
     ],
-    "tuesday": [
+    "day1": [
       {
         "meal": "Texmexgryte, nachos"
       }
     ],
-    "wednesday": [
+    "day2": [
       {
         "meal": "\" Dagens Ravnkloa \""
       }
     ],
-    "thursday": [
+    "day3": [
       {
         "meal": "Svinenakke, tzatsiki, gyrosbrød"
       }
     ],
-    "friday": [
+    "day4": [
       {
         "meal": "Langtidsstekt brisket, maiskrem, stekte hvitløkspoteter"
       }

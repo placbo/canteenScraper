@@ -13,8 +13,8 @@ function splitDayMenu(menuAsString) {
     return menuItems.map((menuItemString) => {
         const menuItem = menuItemString.split('A:');
         return {
-            meal: menuItem[0] && menuItem[0].trim(),
-            allergens: menuItem[1] && menuItem[1].trim()
+            meal: menuItem[0] && (menuItem[0] = menuItem[0].replace(/"/g,'').trim()),
+            allergens: menuItem[1] && (menuItem[1] = menuItem[1].replace(/"/g,'').trim())
         }
     })
 }
@@ -32,26 +32,26 @@ function splitDayMenu(menuAsString) {
                 menu.canteen = $(this).text();
             });
             $('.day-1', this).each(function () {
-                menu.monday = splitDayMenu($(this).text());
+                menu.day0 = splitDayMenu($(this).text());
             });
             $('.day-2', this).each(function () {
-                menu.tuesday = splitDayMenu($(this).text());
+                menu.day1 = splitDayMenu($(this).text());
             });
             $('.day-3', this).each(function () {
-                menu.wednesday = splitDayMenu($(this).text());
+                menu.day2 = splitDayMenu($(this).text());
             });
             $('.day-4', this).each(function () {
-                menu.thursday = splitDayMenu($(this).text());
+                menu.day3 = splitDayMenu($(this).text());
             });
             $('.day-5', this).each(function () {
-                menu.friday = splitDayMenu($(this).text());
+                menu.day4 = splitDayMenu($(this).text());
             });
             menus.push(menu);
         });
     });
 
     //console.log(menus);
-    fs.writeFileSync('menu.json', JSON.stringify(menus));
+    fs.writeFileSync('this_week_menu.js', "data='" + JSON.stringify(menus) + "'");
 
     await browser.close();
 
